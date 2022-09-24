@@ -27,3 +27,15 @@ A.nvim_create_autocmd('TextYankPost', {
         vim.highlight.on_yank()
     end,
 })
+
+A.nvim_create_autocmd({ "InsertEnter" }, {
+    callback = function()
+        vim.api.nvim_set_hl(0, "Normal", {bg="#190f19"})
+    end
+})
+
+A.nvim_create_autocmd({ "InsertLeave" }, {
+    callback = function()
+        vim.api.nvim_set_hl(0, "Normal", {bg="#12121E"})
+    end
+})

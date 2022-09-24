@@ -181,12 +181,18 @@ return require('packer').startup({
             end,
         })
 
+        use {
+            'glacambre/firenvim',
+            run = function() vim.fn['firenvim#install'](0) end 
+        }
+
         use({
             'tpope/vim-surround',
             event = 'BufRead',
             requires = {
                 {
                     'tpope/vim-repeat',
+                    'tpope/vim-unimpaired',
                     event = 'BufRead',
                 },
             },

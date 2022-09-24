@@ -109,6 +109,10 @@ local servers = {
     'jsonls', -- Json
     'yamlls', -- YAML
     'pyright', -- Python
+    'solargraph', -- Ruby
+    'typeprof', -- Ruby Parser
+    'syntax_tree', -- Ruby Parser
+    --'sorbet', -- Ruby Checker
     -- 'terraformls', -- Terraform
 }
 
