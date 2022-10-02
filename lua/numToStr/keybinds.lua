@@ -96,3 +96,20 @@ map('x', '<C-k>', ":move '<-2<CR>gv=gv")
 -- e.g. dA = delete buffer ALL, yA = copy whole buffer ALL
 map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
 map('x', 'A', ':<C-U>normal! ggVG<CR>')
+
+-- Cancel search highlighting with ESC
+map("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>")
+
+-- Center search results
+map("n", "n", "nzz")
+map("n", "N", "Nzz")
+
+-- Better indent
+map("v", "<", "<gv")
+map("v", ">", ">gv")
+
+-- Paste over currently selected text without yanking it
+map("v", "p", '"_dP')
+
+-- Cancel search highlighting with ESC
+map("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>")

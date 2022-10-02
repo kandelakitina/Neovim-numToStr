@@ -216,7 +216,12 @@ return require('packer').startup({
                 require('numToStr.plugins.buffers')
             end,
         })
-
+        use {
+          "folke/which-key.nvim",
+          config = function()
+            require("which-key").setup {}
+          end
+        }
         --------------
         -- Terminal --
         --------------
